@@ -1,23 +1,32 @@
 import { data } from 'autoprefixer'
 import React from 'react'
-import { Hero, Navbar } from './components'
-import Info from './components/Info'
-import InfoCard from './components/InfoCard'
-import { INFO_CARD_DATA } from './constants'
+import { AboutUs, Hero, Info, InfoCard, Navbar } from './components'
+import { ABOUT_DATA, INFO_CARD_DATA } from './constants'
 
 const App = () => {
   return (
     <div>
-      <div className="w-full overflow-hidden">
-        <Navbar />
-        <Hero />
+      <div className="w-full overflow-hidden ">
+        <header className="fixed z-[100] w-full" >
+          <Navbar />
+        </header>
+        <div className="relative">
+          <Hero />
+        </div>
         <div>
           <Info />
         </div>
-        <div className="flex flex-wrap sm:justify-start justify-center  w-full mx-20 items-stretch relative z-[1]">
+        <div className="flex flex-wrap sm:justify-start justify-center  w-full mx-20 my-3 items-stretch relative z-[1]">
           {
             INFO_CARD_DATA.map((data)=>(
               <InfoCard card={data} />
+            ))
+          }
+        </div>
+        <div className="bg-black flex flex-col justify-center w-full py-5 px-60 pt-10">
+          {
+            ABOUT_DATA.map((data)=>(
+              <AboutUs data={data}/>
             ))
           }
         </div>
