@@ -152,7 +152,7 @@ const NavLink = () => {
                                     ? setSubHeading(slinks.Head)
                                     : setSubHeading("")
                                 }
-                                className="py-4 pl-7 font-semibold md:pr-0 pr-5 flex justify-between items-center md:pr-0 pr-5"
+                                className="py-4 pl-7 font-semibold flex justify-between items-center md:pr-0 pr-5"
                             >
                                 {slinks.Head}
                             </h1>

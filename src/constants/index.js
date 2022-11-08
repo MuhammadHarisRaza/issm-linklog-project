@@ -85,3 +85,26 @@ export const ABOUT_DATA= [
         buttonStyle:"rounded-tl-3xl"
     },
 ]
+
+export const STATS = [
+    {
+        stat:"1000+",
+        description:"employees throughout the U.S.",
+        style:"border-r-2 border-r-black"
+    },
+    {
+        stat:"25",
+        description:"offices in key markets across the U.S.",
+        style:"border-r-2 border-r-black"
+    },
+    {
+        stat:"550M",
+        description:"square feet",
+        style:"border-r-2 border-r-black"
+    },
+    {
+        stat:"3700+",
+        description:"properties",
+        style:""
+    },
+]
