@@ -1,3 +1,7 @@
 export const HOME ="We see the future of logistics"
 export const HOME_2 ="through technology"
 export const HOME_BUTTON_TEXT= "VIEW OUR PORTFOLIO"
+export const INFO_TITLE ="It is all about connections."
+export const INFO_DESCRIPTION ="Logistics real estate connects products with the people who need them. Link connects businesses with the warehouse spaces they need to make it all happen—helping its customers grow all along the way."
+export const INFO_QUESTION ="We will get you there."
+export const INFO_ANSWER ="Link owns the largest portfolio of U.S.-only industrial real estate. Our scale is expansive, our technology is leading-edge and our people are talented contributors who bring a passion for what we do."
