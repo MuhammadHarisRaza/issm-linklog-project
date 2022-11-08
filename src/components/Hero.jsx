@@ -11,7 +11,7 @@ const Hero = () => {
             <p className="font-poppins font-normal text-5xl text-white">{HOME}</p>
             <p className="font-poppins font-normal text-5xl text-white">{HOME_2}</p>
             <div className="mt-3">
-                <Button text={HOME_BUTTON_TEXT} />
+                <Button text={HOME_BUTTON_TEXT} buttonStyle="rounded-tr-3xl" />
             </div>
         </div>
     </div>

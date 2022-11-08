@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Button = ({text}) => {
+const Button = ({text,buttonStyle}) => {
   return (
-    <button class=" bg-firered hover:bg-carrot text-black tracking-wider rounded-tr-3xl font-medium py-4 px-10 rounded">
+    <button className={` bg-firered hover:bg-carrot text-black  ${buttonStyle} font-medium tracking-widest  py-3 px-10 rounded`}>
         {text}
     </button>
   )
