@@ -82,7 +82,7 @@ const NavLink = () => {
         <div>
           <div className="px-3 text-left md:cursor-pointer group">
             <h1
-              className="py-7 flex justify-between items-center hover:text-orange-400 md:pr-0 pr-5 group"
+              className="py-7 flex justify-between items-center hover:text-orange-400 tracking-wider hover:tracking-widest md:pr-0 pr-5 group"
               onClick={() => {
                 heading !== link.name ? setHeading(link.name) : setHeading("");
                 setSubHeading("");
@@ -113,17 +113,17 @@ const NavLink = () => {
               
             </h1>
             {link.submenu && (
-              <div>
-                <div className=" bg-teal-700 absolute top-20 hidden group-hover:md:block hover:md:block">
+              <div className="max-w-8xl rounded overflow-hidden shadow-lg">
+                <div className=" px-6 py-4 absolute top-20 hidden group-hover:md:block hover:md:block">
                     <div
                       className="w-[100%] h-[10%] left-3 absolute 
-                        mt-1 bg-teal-700 "
+                        mt-1 bg-oceanicblue "
                     >
                         {
                             link.sublinks.map((sublink)=>(
                                 <li className="text-sm text-gray-600 my-2.5">
                                     <a
-                                        className="hover:text-primary"
+                                        className="hover:text-primary "
                                     >
                                         {sublink.Head}
                                     </a>
@@ -137,29 +137,29 @@ const NavLink = () => {
             )}
           </div>
           {/* Mobile menus */}
-          <div
-            className={`
-            ${heading === link.name ? "md:hidden" : "hidden"}
-          `}
-          >
+            <div
+                className={`
+                ${heading === link.name ? "md:hidden" : "hidden"}
+            `}
+            >
             {/* sublinks */}
-            {link.sublinks.map((slinks) => (
-              <div>
-                <div>
-                  <h1
-                    onClick={() =>
-                      subHeading !== slinks.Head
-                        ? setSubHeading(slinks.Head)
-                        : setSubHeading("")
-                    }
-                    className="py-4 pl-7 font-semibold md:pr-0 pr-5 flex justify-between items-center md:pr-0 pr-5"
-                  >
-                    {slinks.Head}
-                  </h1>
-                </div>
-              </div>
-            ))}
-          </div>
+                {link.sublinks.map((slinks) => (
+                    <div>
+                        <div>
+                            <h1
+                                onClick={() =>
+                                subHeading !== slinks.Head
+                                    ? setSubHeading(slinks.Head)
+                                    : setSubHeading("")
+                                }
+                                className="py-4 pl-7 font-semibold md:pr-0 pr-5 flex justify-between items-center md:pr-0 pr-5"
+                            >
+                                {slinks.Head}
+                            </h1>
+                        </div>
+                    </div>
+                ))}
+            </div>
         </div>
       ))}
     </>

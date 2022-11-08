@@ -4,12 +4,11 @@ import { Hero, Navbar } from './components'
 const App = () => {
   return (
     <div>
-      <div className="w-full bg-teal-700 overflow-hidden">
+      <div className="w-full overflow-hidden">
         <Navbar />
-      </div>
-      <div>
         <Hero />
       </div>
+      
     </div>
     
   )
