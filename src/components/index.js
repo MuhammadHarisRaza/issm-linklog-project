@@ -4,6 +4,7 @@ import Info from "./Info";
 import InfoCard from "./InfoCard";
 import AboutUs from "./AboutUs";
 import Stats from "./Stats";
+import Properties from "./Properties";
 
 export {
     Navbar,
@@ -11,5 +12,6 @@ export {
     Info,
     InfoCard,
     AboutUs,
-    Stats
+    Stats,
+    Properties
 }

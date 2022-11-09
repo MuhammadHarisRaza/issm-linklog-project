@@ -8,6 +8,10 @@ import about3 from "../assets/about3.jpg"
 import about4 from "../assets/about4.jpg"
 import about5 from "../assets/about5.jpeg"
 
+import Hero1 from "../assets/hero1.jpg"
+import Hero2 from "../assets/hero2.jpg"
+import Hero3 from "../assets/hero3.jpg"
+
 export const HOME ="We see the future of logistics"
 export const HOME_2 ="through technology"
 export const HOME_BUTTON_TEXT= "VIEW OUR PORTFOLIO"
@@ -106,5 +110,26 @@ export const STATS = [
         stat:"3700+",
         description:"properties",
         style:""
+    },
+]
+
+export const PROPERTIES=[
+    {
+        image:Hero2,
+        region:"EAST REGION",
+        area:"202,307,000",
+        total:"1,358"
+    },
+    {
+        image:Hero1,
+        region:"CENTRAL REGION",
+        area:"185,420,000",
+        total:"1,123"
+    },
+    {
+        image:Hero3,
+        region:"WEST REGION",
+        area:"147,065,000",
+        total:"1,062"
     },
 ]
