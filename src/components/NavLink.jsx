@@ -1,13 +1,16 @@
 import React, { useState } from 'react'
 import { CaretDownOutline, CaretUpOutline } from 'react-ionicons'
+import { useNavigate } from "react-router-dom";
 
 const NavLink = () => {
     const [heading, setHeading] = useState("");
-  const [subHeading, setSubHeading] = useState("");
+    const [subHeading, setSubHeading] = useState("");
+    const navigate = useNavigate();
     const links = [
         {
             name:"Portfolio",
             submenu: true,
+            link:"/",
             sublinks: [
                 {
                     Head: "East Region",
@@ -26,6 +29,7 @@ const NavLink = () => {
         {
             name:"Capabilities",
             submenu: true,
+            link:"/",
             sublinks: [
                 {
                     Head: "Customer Support",
@@ -38,6 +42,7 @@ const NavLink = () => {
         {
             name:"About",
             submenu: true,
+            link:"/",
             sublinks: [
                 {
                     Head: "Leadership",
@@ -56,6 +61,7 @@ const NavLink = () => {
         {
             name:"Careers",
             submenu: true,
+            link:"/",
             sublinks: [
                 {
                     Head: "Job Opening",
@@ -68,11 +74,13 @@ const NavLink = () => {
         {
             name:"Contact",
             submenu: false,
+            link:"/contact",
             sublinks: [],
         },
         {
             name:"Customer Login",
             submenu: false,
+            link:"/",
             sublinks: [],
         },
     ]
@@ -84,8 +92,10 @@ const NavLink = () => {
             <h1
               className="py-7 flex justify-between items-center hover:text-orange-400 tracking-wider hover:tracking-widest md:pr-0 pr-5 group"
               onClick={() => {
+                console.log("link---------->",link)
                 heading !== link.name ? setHeading(link.name) : setHeading("");
                 setSubHeading("");
+                navigate(link.link);
               }}
             >
               {link.name}
