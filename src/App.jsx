@@ -1,6 +1,6 @@
 import { data } from 'autoprefixer'
 import React from 'react'
-import { AboutUs, Charity, Hero, Info, InfoCard, Navbar, Properties, Stats } from './components'
+import { AboutUs, Charity, Footer, Hero, Info, InfoCard, Navbar, Properties, Stats } from './components'
 import { ABOUT_DATA, INFO_CARD_DATA } from './constants'
 
 const App = () => {
@@ -38,6 +38,9 @@ const App = () => {
         </div>
         <div>
           <Charity />
+        </div>
+        <div className=" bg-charcoal flex justify-center items-start w-full">
+          <Footer />
         </div>
       </div>
       
