@@ -1,17 +1,25 @@
+
 import React from 'react'
-import { Hero, Navbar } from './components'
+import Home from './pages/Home'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import Contact from './pages/Contact';
+
 
 const App = () => {
   return (
     <div>
-      <div className="w-full bg-teal-700 overflow-hidden">
-        <Navbar />
-      </div>
-      <div>
-        <Hero />
-      </div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Router>
     </div>
-    
   )
 }
 
