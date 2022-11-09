@@ -209,10 +209,6 @@ export const socialMedia = [
         ],
     },
     {
-        title: "CUSTOMER LOGIN",
-        links: [],
-    },
-    {
         title: "CAPABILITIES",
         links: [
           {
@@ -233,6 +229,10 @@ export const socialMedia = [
             name: "Internship",
           },
         ],
+    },
+    {
+        title: "CUSTOMER LOGIN",
+        links: [],
     },
     {
         title: "BROKEN MARKETING",

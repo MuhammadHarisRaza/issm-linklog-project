@@ -13,7 +13,7 @@ const Footer = () => (
         />
       </div>
 
-      <div className="flex-[1.5] w-full flex flex-row justify-around flex-wrap md:mt-0 mt-10">
+      <div className="flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10">
         {FOOTER_LINKS.map((footerlink) => (
           <div key={footerlink.title} className={`flex flex-col ss:my-0 my-4 min-w-[150px]`}>
             <h4 className="font-poppins font-medium text-[14px] leading-[27px] tracking-widest text-golden">
