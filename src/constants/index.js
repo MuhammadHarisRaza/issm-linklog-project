@@ -133,3 +133,13 @@ export const PROPERTIES=[
         total:"1,062"
     },
 ]
+
+export const CHARITY = {
+    image:about4,
+    Title:"Our space is your space.",
+    Description:"Link invites charities, nonprofits and philanthropic organizations across the country to utilize our warehouse space in order to help them continue the critical work they do.",
+    ButtonText:"LEARN MORE",
+    flexStyle:"flex-row",
+    imageStyle:"rounded-tl-[100px]",
+    buttonStyle:"rounded-tr-3xl text-white bg-black"
+}

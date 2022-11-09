@@ -1,6 +1,6 @@
 import { data } from 'autoprefixer'
 import React from 'react'
-import { AboutUs, Hero, Info, InfoCard, Navbar, Properties, Stats } from './components'
+import { AboutUs, Charity, Hero, Info, InfoCard, Navbar, Properties, Stats } from './components'
 import { ABOUT_DATA, INFO_CARD_DATA } from './constants'
 
 const App = () => {
@@ -35,6 +35,9 @@ const App = () => {
         </div>
         <div>
           <Properties />
+        </div>
+        <div>
+          <Charity />
         </div>
       </div>
       
