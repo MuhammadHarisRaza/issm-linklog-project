@@ -6,6 +6,7 @@ import AboutUs from "./AboutUs";
 import Stats from "./Stats";
 import Properties from "./Properties";
 import Charity from "./Charity";
+import Footer from "./Footer";
 
 export {
     Navbar,
@@ -15,5 +16,6 @@ export {
     AboutUs,
     Stats,
     Properties,
-    Charity
+    Charity,
+    Footer
 }

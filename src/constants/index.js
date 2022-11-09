@@ -2,6 +2,12 @@ import card1 from "../assets/card1.png"
 import card2 from "../assets/card2.jpg"
 import card3 from "../assets/card3.jpg"
 
+import instagram from "../assets/instagram.svg"
+import facebook from "../assets/facebook.svg"
+import linkedin from "../assets/linkedin.svg"
+import twitter from "../assets/twitter.svg"
+
+
 import about1 from "../assets/about1.jpg"
 import about2 from "../assets/about2.jpg"
 import about3 from "../assets/about3.jpg"
@@ -143,3 +149,98 @@ export const CHARITY = {
     imageStyle:"rounded-tl-[100px]",
     buttonStyle:"rounded-tr-3xl text-white bg-black"
 }
+
+export const socialMedia = [
+    {
+      id: "social-media-1",
+      icon: instagram,
+      link: "https://www.instagram.com/",
+    },
+    {
+      id: "social-media-2",
+      icon: facebook,
+      link: "https://www.facebook.com/",
+    },
+    {
+      id: "social-media-3",
+      icon: twitter,
+      link: "https://www.twitter.com/",
+    },
+    {
+      id: "social-media-4",
+      icon: linkedin,
+      link: "https://www.linkedin.com/",
+    },
+  ];
+
+  export const FOOTER_LINKS = [
+    {
+      title: "PORTFOLIO",
+      links: [
+        {
+          name: "East Region",
+        },
+        {
+          name: "Central Region",
+        },
+        {
+          name: "West Region",
+        },
+      ],
+    },
+    {
+        title: "ABOUT",
+        links: [
+          {
+            name: "Leadership",
+          },
+          {
+            name: "News",
+          },
+          {
+            name: "ESG",
+          },
+          {
+            name: "2021 ESG Report",
+          },
+          {
+            name: "Community Link",
+          },
+        ],
+    },
+    {
+        title: "CUSTOMER LOGIN",
+        links: [],
+    },
+    {
+        title: "CAPABILITIES",
+        links: [
+          {
+            name: "Customer Support",
+          },
+          {
+            name: "Customer Property Development",
+          },
+        ],
+    },
+    {
+        title: "CAREERS",
+        links: [
+          {
+            name: "Job Openings",
+          },
+          {
+            name: "Internship",
+          },
+        ],
+    },
+    {
+        title: "BROKEN MARKETING",
+        links: [],
+    },
+    {
+        title: "CONTACT",
+        links: [],
+    },
+    
+];
