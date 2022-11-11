@@ -90,7 +90,7 @@ const NavLink = () => {
         <div>
           <div className="px-3 text-left md:cursor-pointer group">
             <h1
-              className="py-7 flex justify-between items-center hover:text-orange-400 tracking-wider hover:tracking-widest md:pr-0 pr-5 group"
+              className="py-7 flex justify-between items-center hover:text-orange-400 md:pr-0 pr-5 group"
               onClick={() => {
                 console.log("link---------->",link)
                 heading !== link.name ? setHeading(link.name) : setHeading("");
@@ -123,7 +123,7 @@ const NavLink = () => {
               
             </h1>
             {link.submenu && (
-              <div className="max-w-8xl rounded overflow-hidden shadow-lg">
+              <div className="max-w-8xl max-h-8xl rounded overflow-hidden shadow-lg bg-white">
                 <div className=" px-6 py-4 absolute top-20 hidden group-hover:md:block hover:md:block">
                     <div
                       className="w-[100%] h-[10%] left-3 absolute 
