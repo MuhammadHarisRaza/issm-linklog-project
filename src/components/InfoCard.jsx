@@ -3,9 +3,9 @@ import React from 'react'
 const InfoCard = ({card}) => {
     const {img,title,description} = card
   return (
-    <div className="flex justify-between flex-col mx-10 px-1  py-12 bg-center bg-cover rounded-[20px]   max-w-[370px] ">
-        <div className="max-w-sm rounded overflow-hidden  bg-black border-2 border-golden">
-            <img className="w-full h-[200px] " src={img} alt="Sunset in the mountains" />
+    <div className="flex justify-between flex-col mx-5 px-1 py-12 bg-center bg-cover rounded-[20px] max-w-[490px] ">
+        <div className=" rounded overflow-hidden  bg-black border-2 border-golden">
+            <img className="w-full h-[200px] bg-cover bg-center" src={img} alt="Sunset in the mountains" />
             <div className="px-6 py-4">
                 <div className="font-bold text-white text-xl mb-2">{title}</div>
                 <p className="text-white text-base">

@@ -18,6 +18,8 @@ import Hero1 from "../assets/hero1.jpg"
 import Hero2 from "../assets/hero2.jpg"
 import Hero3 from "../assets/hero3.jpg"
 
+import home from "../assets/home.webp"
+
 export const HOME ="We see the future of logistics"
 export const HOME_2 ="through technology"
 export const HOME_BUTTON_TEXT= "VIEW OUR PORTFOLIO"
@@ -52,7 +54,9 @@ export const ABOUT_DATA= [
         ButtonText:"EXPLORE THE REPORT",
         flexStyle:"flex-row",
         imageStyle:"rounded-bl-[100px]",
-        buttonStyle:"rounded-tl-3xl"
+        buttonStyle:"rounded-tl-3xl",
+        textStyle:"text-left",
+        buttonFlex:"flex-row"
 
     },
     {
@@ -62,7 +66,9 @@ export const ABOUT_DATA= [
         ButtonText:"VIEW OUR PORTFOLIO",
         flexStyle:"flex-row",
         imageStyle:"rounded-tl-[100px]",
-        buttonStyle:"rounded-tl-3xl"
+        buttonStyle:"rounded-tl-3xl ",
+        textStyle:"text-left",
+        buttonFlex:"flex-row"
 
     },
     {
@@ -72,7 +78,9 @@ export const ABOUT_DATA= [
         ButtonText:"VIEW JOB OPENINGS",
         flexStyle:"flex-row-reverse",
         imageStyle:"rounded-tr-[100px]",
-        buttonStyle:"rounded-tl-3xl"
+        buttonStyle:"rounded-tl-3xl place-items-end",
+        textStyle:"text-right",
+        buttonFlex:"flex-row-reverse"
 
     },
     {
@@ -82,7 +90,9 @@ export const ABOUT_DATA= [
         ButtonText:"LEARN MORE",
         flexStyle:"flex-row",
         imageStyle:"rounded-tl-[100px]",
-        buttonStyle:"rounded-tl-3xl"
+        buttonStyle:"rounded-tl-3xl",
+        textStyle:"text-left",
+        buttonFlex:"flex-row"
 
     },
     {
@@ -92,7 +102,9 @@ export const ABOUT_DATA= [
         ButtonText:"LEARN MORE",
         flexStyle:"flex-row-reverse",
         imageStyle:"rounded-br-[100px]",
-        buttonStyle:"rounded-tl-3xl"
+        buttonStyle:"rounded-tl-3xl items-end",
+        textStyle:"text-right",
+        buttonFlex:"flex-row-reverse"
     },
 ]
 
@@ -100,17 +112,17 @@ export const STATS = [
     {
         stat:"1000+",
         description:"employees throughout the U.S.",
-        style:"border-r-2 border-r-black"
+        style:"border-r border-r-black"
     },
     {
         stat:"25",
         description:"offices in key markets across the U.S.",
-        style:"border-r-2 border-r-black"
+        style:"border-r border-r-black"
     },
     {
         stat:"550M",
         description:"square feet",
-        style:"border-r-2 border-r-black"
+        style:"border-r border-r-black"
     },
     {
         stat:"3700+",
@@ -141,13 +153,13 @@ export const PROPERTIES=[
 ]
 
 export const CHARITY = {
-    image:about4,
+    image:home,
     Title:"Our space is your space.",
     Description:"Link invites charities, nonprofits and philanthropic organizations across the country to utilize our warehouse space in order to help them continue the critical work they do.",
     ButtonText:"LEARN MORE",
     flexStyle:"flex-row",
     imageStyle:"rounded-tl-[100px]",
-    buttonStyle:"rounded-tr-3xl text-white bg-black"
+    buttonStyle:"rounded-tr-3xl text-white bg-charcoal hover:bg-black"
 }
 
 export const socialMedia = [

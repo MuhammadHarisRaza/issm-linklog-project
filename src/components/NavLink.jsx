@@ -88,9 +88,10 @@ const NavLink = () => {
     <>
     {links.map((link) => (
         <div>
-          <div className="px-3 text-left md:cursor-pointer group">
+          <div className="flex flex-row px-3 py-7 text-left md:cursor-pointer group">
+            
             <h1
-              className="py-7 flex justify-between items-center hover:text-orange-400 md:pr-0 pr-5 group"
+              className=" flex justify-between items-center hover:text-orange-400 md:pr-0 pr-5 group"
               onClick={() => {
                 console.log("link---------->",link)
                 heading !== link.name ? setHeading(link.name) : setHeading("");
@@ -122,6 +123,15 @@ const NavLink = () => {
               }
               
             </h1>
+            {
+                link.submenu && (
+                    <CaretDownOutline
+                        color={'#00000'} 
+                        height="20px"
+                        width="20px"
+                    />
+                ) 
+            }
             {link.submenu && (
               <div className="max-w-8xl max-h-8xl rounded overflow-hidden shadow-lg bg-white">
                 <div className=" px-6 py-4 absolute top-20 hidden group-hover:md:block hover:md:block">
