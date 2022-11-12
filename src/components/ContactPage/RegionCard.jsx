@@ -4,17 +4,17 @@ const RegionCard = ({data}) => {
     console.log("office---------->",data)
     //const {name, streetAddress, postalAddress} = data
   return (
-    <div className="grid grid-cols-3 gap-[100px]">
+    <div className="grid md:grid-cols-3 grid-cols-1 md:gap-[100px] gap-[10px]">
         {
             data.map((data)=>(
                 <div className="w-[100%]  py-4 ">
-                    <p className="text-black leading-[25px] mb-5 font-normal text-xl">
+                    <p className="text-black leading-[25px] mb-5 font-normal md:text-xl text-[13px]">
                         {data.name}
                     </p>
-                    <p className="text-black leading-[15px] font-normal text-xl">
+                    <p className="text-black leading-[15px] font-normal md:text-xl text-[13px]">
                         {data.streetAddress}
                     </p>
-                    <p className="text-black leading-[35px] font-normal text-xl">
+                    <p className="text-black leading-[35px] font-normal md:text-xl text-[13px]">
                         {data.postalAddress}
                     </p>
                 </div>

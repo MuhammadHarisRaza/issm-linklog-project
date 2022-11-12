@@ -52,10 +52,10 @@ export const ABOUT_DATA= [
         Title:"Link's 2021 ESG Report",
         Description:"At Link, strong environmental, social and governance (ESG) practices are core to our identity as a firm. Our 2021 ESG report recaps our progress during the calendar year and shows how we will continue to redefine what sustainability looks like in the industrial real estate sector.",
         ButtonText:"EXPLORE THE REPORT",
-        flexStyle:"flex-row",
+        flexStyle:"flex-col md:flex-row",
         imageStyle:"rounded-bl-[100px]",
-        buttonStyle:"rounded-tl-3xl",
-        textStyle:"text-left",
+        buttonStyle:"rounded-tr-3xl md:rounded-tl-3xl",
+        textStyle:"text-left md:text-left",
         buttonFlex:"flex-row"
 
     },
@@ -64,10 +64,10 @@ export const ABOUT_DATA= [
         Title:"National scale, local service.",
         Description:"Our large footprint in gateway cities, key distribution hubs and high-population growth areas enable us to provide world-class, personalized service throughout the U.S.",
         ButtonText:"VIEW OUR PORTFOLIO",
-        flexStyle:"flex-row",
+        flexStyle:"flex-col md:flex-row",
         imageStyle:"rounded-tl-[100px]",
-        buttonStyle:"rounded-tl-3xl ",
-        textStyle:"text-left",
+        buttonStyle:"rounded-tr-3xl md:rounded-tl-3xl ",
+        textStyle:"text-left md:text-left",
         buttonFlex:"flex-row"
 
     },
@@ -76,11 +76,11 @@ export const ABOUT_DATA= [
         Title:"Building a satisfying career.",
         Description:"Our commitment to employee well-being, satisfaction and support enables us to attract, develop, inspire and reward great people",
         ButtonText:"VIEW JOB OPENINGS",
-        flexStyle:"flex-row-reverse",
+        flexStyle:"flex-col md:flex-row-reverse",
         imageStyle:"rounded-tr-[100px]",
-        buttonStyle:"rounded-tl-3xl place-items-end",
-        textStyle:"text-right",
-        buttonFlex:"flex-row-reverse"
+        buttonStyle:"rounded-tr-3xl md:rounded-tl-3xl place-items-end",
+        textStyle:"text-left md:text-right",
+        buttonFlex:"flex-row md:flex-row-reverse"
 
     },
     {
@@ -88,10 +88,10 @@ export const ABOUT_DATA= [
         Title:"We design and build warehouses that allow our customers to evolve.",
         Description:"Link seamlessly manages the entire process of delivering facilities that support our customers’ long-term growth strategies.",
         ButtonText:"LEARN MORE",
-        flexStyle:"flex-row",
+        flexStyle:"flex-col md:flex-row",
         imageStyle:"rounded-tl-[100px]",
-        buttonStyle:"rounded-tl-3xl",
-        textStyle:"text-left",
+        buttonStyle:"rounded-tr-3xl md:rounded-tl-3xl",
+        textStyle:"text-left md:text-left",
         buttonFlex:"flex-row"
 
     },
@@ -100,11 +100,11 @@ export const ABOUT_DATA= [
         Title:"From the ground up: a holistic approach to ESG.",
         Description:"Sustainability is built into our foundation. At the heart of everything we do, it drives our commitment to renewable energy, green building technology and carbon neutrality.",
         ButtonText:"LEARN MORE",
-        flexStyle:"flex-row-reverse",
+        flexStyle:"flex-col md:flex-row-reverse",
         imageStyle:"rounded-br-[100px]",
-        buttonStyle:"rounded-tl-3xl items-end",
-        textStyle:"text-right",
-        buttonFlex:"flex-row-reverse"
+        buttonStyle:"rounded-tr-3xl md:rounded-tl-3xl items-end",
+        textStyle:"text-left md:text-right",
+        buttonFlex:"flex-row md:flex-row-reverse"
     },
 ]
 
@@ -112,17 +112,17 @@ export const STATS = [
     {
         stat:"1000+",
         description:"employees throughout the U.S.",
-        style:"border-r border-r-black"
+        style:"md:border-r border-r-0  border-r-black"
     },
     {
         stat:"25",
         description:"offices in key markets across the U.S.",
-        style:"border-r border-r-black"
+        style:"md:border-r border-r-0 border-r-black"
     },
     {
         stat:"550M",
         description:"square feet",
-        style:"border-r border-r-black"
+        style:"md:border-r border-r-0 border-r-black"
     },
     {
         stat:"3700+",
@@ -157,7 +157,7 @@ export const CHARITY = {
     Title:"Our space is your space.",
     Description:"Link invites charities, nonprofits and philanthropic organizations across the country to utilize our warehouse space in order to help them continue the critical work they do.",
     ButtonText:"LEARN MORE",
-    flexStyle:"flex-row",
+    flexStyle:"md:flex-row flex-column",
     imageStyle:"rounded-tl-[100px]",
     buttonStyle:"rounded-tr-3xl text-white bg-charcoal hover:bg-black"
 }
@@ -242,6 +242,10 @@ export const socialMedia = [
           },
         ],
     },
+    
+];
+
+export const LINKS = [
     {
         title: "CUSTOMER LOGIN",
         links: [],
@@ -254,8 +258,7 @@ export const socialMedia = [
         title: "CONTACT",
         links: [],
     },
-    
-];
+]
 
 export const OFFICE_DATA =[
     {

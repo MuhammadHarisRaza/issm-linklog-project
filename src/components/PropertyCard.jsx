@@ -3,9 +3,9 @@ import React from 'react'
 const PropertyCard = ({data}) => {
     const {image,region,area,total} =data
   return (
-    <div className="flex justify-between flex-col  py-12  rounded-[20px]   max-w-[370px] ">
+    <div className="flex md:mx-5 mx-0 md:px-1 px-0 flex-col  py-12  rounded-[20px]   md:max-w-[500px] max-w-full ">
         <div className="max-w-full rounded overflow-hidden bg-charcoal border-2 border-golden">
-            <img className="w-full h-[200px] bg-cover bg-center" src={image} alt="Sunset in the mountains" />
+            <img className="w-full md:h-[200px] h-[250px] bg-cover bg-center" src={image} alt="Sunset in the mountains" />
             <div className="px-4 py-4">
                 <div className="font-bold text-white tracking-widest text-lg mb-2">{region}</div>
                 <p className="text-white text-4xl">
