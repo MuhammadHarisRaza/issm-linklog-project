@@ -8,7 +8,7 @@ const Contact = () => {
         <header className="fixed z-[100] w-full" >
           <Navbar />
         </header>
-        <div className="relative">
+        <div className="relative ">
           <ContactPage />
         </div>
         <div className=" bg-charcoal flex justify-center items-start w-full">

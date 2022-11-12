@@ -88,11 +88,11 @@ const NavLink = () => {
     <>
     {links.map((link) => (
         <div>
-          <div className="px-3 text-left md:cursor-pointer group">
+          <div className="flex flex-row px-3 py-7 text-left md:cursor-pointer group">
+            
             <h1
-              className="py-7 flex justify-between items-center hover:text-orange-400 tracking-wider hover:tracking-widest md:pr-0 pr-5 group"
+              className=" flex justify-between items-center hover:text-orange-400 md:pr-0 pr-5 group"
               onClick={() => {
-                console.log("link---------->",link)
                 heading !== link.name ? setHeading(link.name) : setHeading("");
                 setSubHeading("");
                 navigate(link.link);
@@ -101,7 +101,7 @@ const NavLink = () => {
               {link.name}
               {
                 link.submenu === true ? (
-                    <span className="text-xl lg:hidden md:hidden inline">
+                    <span className="text-xl  inline">
                 {
                     heading === link.name ? (
                         <CaretUpOutline
@@ -123,7 +123,7 @@ const NavLink = () => {
               
             </h1>
             {link.submenu && (
-              <div className="max-w-8xl rounded overflow-hidden shadow-lg">
+              <div className="max-w-8xl max-h-8xl rounded overflow-hidden shadow-lg bg-white">
                 <div className=" px-6 py-4 absolute top-20 hidden group-hover:md:block hover:md:block">
                     <div
                       className="w-[100%] h-[10%] left-3 absolute 

@@ -1,6 +1,6 @@
 
 import  logo  from "../assets/logo-gold.svg";
-import {  FOOTER_LINKS, socialMedia } from "../constants";
+import {  FOOTER_LINKS, LINKS, socialMedia } from "../constants";
 
 const Footer = () => (
   <section className={`flex justify-center items-center w-full px-40 sm:py-16 py-6 flex-col`}>
@@ -15,7 +15,7 @@ const Footer = () => (
 
       <div className="flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10">
         {FOOTER_LINKS.map((footerlink) => (
-          <div key={footerlink.title} className={`flex flex-col ss:my-0 my-4 min-w-[150px]`}>
+          <div key={footerlink.title} className={` ss:my-0 my-4 min-w-[150px]`}>
             <h4 className="font-poppins font-medium text-[14px] leading-[27px] tracking-widest text-golden">
               {footerlink.title}
             </h4>
@@ -33,6 +33,16 @@ const Footer = () => (
             </ul>
           </div>
         ))}
+      </div>
+      <div className={`flex flex-col mx-14 min-w-[150px]`}>
+      {
+        LINKS.map((link)=>(
+          
+            <h4 className="font-poppins font-medium text-[14px] leading-[67px] tracking-widest text-golden">
+                {link.title}
+            </h4>
+        ))
+      }
       </div>
     </div>
 

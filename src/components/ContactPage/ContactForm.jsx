@@ -3,7 +3,7 @@ import { INF0 } from '../../constants'
 
 const ContactForm = () => {
   return (
-    <div className="container mx-auto border-t-4 border-black">
+    <div className="container border-t-4 border-black">
         <p className="mt-3">{INF0}</p>
         <div className="mt-3">
             <form>
@@ -39,7 +39,7 @@ const ContactForm = () => {
                     </div>
                     <label for="remember" className="ml-2 text-sm font-thin text-gray-900 dark:text-gray-400">I accept that Link retains my personal information pursuant to Link's process.</label>
                 </div>
-                <button type="submit" className="text-white bg-black rounded-tr-3xl focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+                <button type="submit" className="text-white bg-black rounded-tr-3xl focus:ring-4 focus:outline-none  font-medium  text-sm w-full sm:w-auto px-7  py-4 text-center">Submit</button>
             </form>
         </div>
     </div>

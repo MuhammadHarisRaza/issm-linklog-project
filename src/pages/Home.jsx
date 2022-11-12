@@ -15,21 +15,21 @@ const Home = () => {
         <div>
           <Info />
         </div>
-        <div className="flex flex-wrap sm:justify-start justify-center  w-full mx-20 my-3 items-stretch relative z-[1]">
+        <div className="grid  md:grid-cols-3 grid-cols-1 gap-[10px]  md:w-[80%] w-[90%]  md:mx-40 mx-10 my-3 items-center relative z-[1]">
           {
             INFO_CARD_DATA.map((data)=>(
               <InfoCard card={data} />
             ))
           }
         </div>
-        <div className="bg-black flex flex-col justify-center w-full py-5 px-60 pt-10">
+        <div className=" bg-charcoal flex flex-col justify-center w-full py-5 md:px-60 px-10 pt-10">
           {
             ABOUT_DATA.map((data)=>(
               <AboutUs data={data}/>
             ))
           }
         </div>
-        <div className=" bg-golden flex flex-col justify-center w-full  px-40 py-20">
+        <div className=" bg-golden  flex-col items-center justify-center w-full  px-40 py-20">
           <Stats />
         </div>
         <div>
